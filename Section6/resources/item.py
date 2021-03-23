@@ -56,7 +56,6 @@ class Item(Resource):
         item = Item.find_by_name()
         if item:
             item.delete_from_db()
-
         return{'message' : 'Item deleted'}
 
 
